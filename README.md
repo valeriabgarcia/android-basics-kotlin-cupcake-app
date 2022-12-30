@@ -26,4 +26,18 @@ Summary
 
 * Android frameworks provides a class called SimpleDateFormat, a class for formatting and parsing dates in a locale-sensitive manner. It allows for formatting (date → text) and parsing (text → date) dates.
 
+* Android keeps a back stack of all the destinations you've visited, with each new destination being pushed onto the stack.
+
+* By tapping the Up or Back button, you can pop destinations off the back stack.
+
+* Using the Jetpack Navigation component helps you push and pop fragment destinations off the back stack, so that the default Back button behavior comes for free.
+
+* Specify the app:popUpTo attribute on an action in the navigation graph, in order to pop destinations off the back stack until the specified one in the attribute value.
+
+* Specify app:popUpToInclusive="true" on an action when the destination specified in app:popUpTo should also be popped off the back stack.
+
+* You can create an implicit intent to share content to an email app, using Intent.ACTION_SEND and populating intent extras such as Intent.EXTRA_EMAIL, Intent.EXTRA_SUBJECT, and Intent.EXTRA_TEXT to name a few.
+
+* Use a plurals resource if you want to use different string resources based on quantity, such as the singular or plural case.
+
 
