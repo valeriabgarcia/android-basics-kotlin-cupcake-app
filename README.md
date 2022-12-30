@@ -9,6 +9,9 @@ This app demonstrates multiple fragments in an activity, a shared ViewModel acro
 data binding, LiveData, and the Jetpack Navigation component.
 
 
+https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-4
+
+
 
 Summary
 --------------
