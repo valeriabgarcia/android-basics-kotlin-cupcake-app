@@ -43,4 +43,12 @@ Summary
 
 * Use a plurals resource if you want to use different string resources based on quantity, such as the singular or plural case.
 
+* Learned how to set up a LiveData test.
+
+* Learned how to test LiveData itself.
+
+* Learned how to test LiveData that is transformed.
+
+* Learned how to observe LiveData in a unit test.
+
 
