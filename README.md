@@ -1,4 +1,4 @@
-Cupcake app
+Shared ViewModel Across Fragments
 =================================
 
 This app contains an order flow for cupcakes with options for quantity, flavor, and pickup date.
@@ -9,18 +9,21 @@ This app demonstrates multiple fragments in an activity, a shared ViewModel acro
 data binding, LiveData, and the Jetpack Navigation component.
 
 
-Pre-requisites
+
+Summary
 --------------
-* Familiar with activities and fragments
-* How to use styles and themes in the UI
-* Basic understanding of Jetpack architecture components including ViewModel and LiveData
-* Data binding and binding expressions
-* Kotlin syntax basics
+* The ViewModel is a part of the Android Architecture Components and the app data saved within the ViewModel is retained during configuration changes. To add a ViewModel to your app, you create a new class and extend it from the ViewModel class.
+
+* Shared ViewModel is used to save the app's data from multiple fragments in a single ViewModel. Multiple fragments in the app will access the shared ViewModel using their activity scope.
+
+* LifecycleOwner is a class that has an Android lifecycle, such as an activity or a fragment.
+
+* LiveData observer observes the changes to the app's data only if the lifecycle owner is in active states (STARTED or RESUMED).
+
+* Listener bindings are lambda expressions that run when an event happens such as an onClick event. They are similar to method references such as textview.setOnClickListener(clickListener) but listener bindings let you run arbitrary data binding expressions.
+
+* The LiveData transformation method(s) provides a way to perform data manipulations on the source LiveData and return a resulting LiveData object.
+
+* Android frameworks provides a class called SimpleDateFormat, a class for formatting and parsing dates in a locale-sensitive manner. It allows for formatting (date → text) and parsing (text → date) dates.
 
 
-Getting Started
----------------
-1. Install Android Studio, if you don't already have it.
-2. Download the sample.
-3. Import the sample into Android Studio.
-4. Build and run the sample.
